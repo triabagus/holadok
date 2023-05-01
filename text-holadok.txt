@@ -1,0 +1,36 @@
+========== HEADER ==========
+.nav__logo
+Holadok
+
+.nav__menu
+Home
+Features
+Blog
+About Us
+
+.button__menu
+Login
+Book Now
+
+========== HOME ==========
+.title__home
+Get the healthcare you need, when you need it.
+
+.description__home
+Manage all of your healthcare needs in one convenient place – from booking appointments to tracking your health history.
+
+========== COMMENTS ==========
+.title__comments
+Jane Doe
+
+.description__comments
+“The doctor appointment app has been great for me. Scheduling appointments and getting medication reminders is much easier, and I love the option for virtual consultations. I'd recommend this app to others.”
+
+========== SERVICES ==========
+.title__services
+Online appointment scheduling
+Medication reminders
+Virtual consultations
+
+.description__services
+Allows users to schedule appointments with their healthcare provider through the app.
