@@ -122,7 +122,7 @@ button {
 .header{
   position: fixed;
   width: 100%;
-  background: var(--body-color);
+  background: transparent;
   top: 0;
   left: 0;
   z-index: var(--z-fixed);
@@ -233,6 +233,11 @@ button {
   font-weight: 600;
 }
 
+/*=============== HOME ===============*/
+.home{
+  position: relative;
+}
+
 /*=============== BREAKPOINTS ===============*/
 /* For small devices */
 @media screen and (max-width: 340px){
@@ -280,6 +285,11 @@ button {
 
   .nav{
     height: calc(var(--header-height) + 65px);
+  }
+
+  .home__container{
+    grid-template-columns: 480px 500px;
+    padding-block: 7rem 3rem;
   }
 }
 
