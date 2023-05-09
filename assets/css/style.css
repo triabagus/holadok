@@ -115,7 +115,7 @@ button {
 }
 
 .main{
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 
 /*=============== HEADER & NAV ===============*/
@@ -265,16 +265,19 @@ button {
 }
 
 .home__img{
-  width: 450px;
+  width: 400px;
+  position: absolute;
+  left: 5rem;
 }
 
 .home__parallelogram{
   background: #9BEAE0;
-  height: 847px;
-  width: 590px;
+  height: 810px;
+  width: 510px;
   clip-path: polygon(20% 0%, 100% 0%, 80% 100%, 0% 100%);
   position: absolute;
   top: -13rem;
+  left: 0rem;
   z-index: -1;
 }
 
