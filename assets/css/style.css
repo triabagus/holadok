@@ -238,6 +238,61 @@ button {
   position: relative;
 }
 
+.home__title{
+  color: #101C45;
+  font-family: var(--body-font);
+  font-weight: 500;
+  font-size: 48px;
+  margin-bottom: 15px;
+}
+
+.home__description{
+  font-family: var(--body-font);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+  color: #101C45;
+  margin-bottom: 40px;
+}
+
+.home__container{
+  justify-content: space-between;
+}
+
+.home__images{
+  position: relative;
+}
+
+.home__img{
+  width: 450px;
+}
+
+.home__parallelogram{
+  background: #9BEAE0;
+  height: 847px;
+  width: 590px;
+  clip-path: polygon(20% 0%, 100% 0%, 80% 100%, 0% 100%);
+  position: absolute;
+  top: -13rem;
+  z-index: -1;
+}
+
+/* Button */
+.button{
+  padding: 15px 35px;
+  width: 235px;
+  height: 60px;
+  background: #203271;
+  color: #fff;
+  font-family: var(--title-font);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+  color: #FFFFFF;
+}
+
 /*=============== BREAKPOINTS ===============*/
 /* For small devices */
 @media screen and (max-width: 340px){
@@ -288,7 +343,7 @@ button {
   }
 
   .home__container{
-    grid-template-columns: 480px 500px;
+    grid-template-columns: 480px 450px;
     padding-block: 7rem 3rem;
   }
 }
