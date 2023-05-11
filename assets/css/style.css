@@ -264,6 +264,45 @@ button {
   position: relative;
 }
 
+.home__box-testimonial{
+  position: absolute;
+  background: #fff;
+  width: 292px;
+  box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  padding: 20px;
+  top: -3rem;
+  left: -5rem;
+}
+.home__box-data,
+.home__box-data div{
+  display: flex;
+  align-items: center;
+}
+.home__box-data{
+  justify-content: space-between;
+  margin-bottom: 12px;
+}
+.home__box-data div img{
+  margin-right: 10px;
+}
+.home__box-user{
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 20px;
+  color: #000000;
+}
+.home__box-testimonial{
+  font-family: 'Source Sans Pro';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 20px;
+  color: #101C45;
+}
+
 .home__img{
   width: 400px;
   position: absolute;
