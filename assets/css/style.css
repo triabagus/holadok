@@ -335,6 +335,48 @@ button {
   color: #FFFFFF;
 }
 
+/* Info */
+.info__container{
+  grid: 100px / auto auto auto;
+  grid-gap: 29px;
+  background: #203271;
+  position: relative;
+  padding: 30px;
+  margin-top: 9rem;
+}
+
+.info__child{
+  display: flex;
+  gap: 1rem;
+}
+
+.info__child img{
+  width: 30px;
+  height: 30px;
+}
+
+.info__child .info__data{
+  color: #fff;
+}
+
+.info__title,
+.info__description{
+  font-family: 'DM Sans';
+  font-style: normal;
+}
+
+.info__title{
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 23px;
+  margin-bottom: 0.3rem;
+}
+
+.info__description{
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 18px;
+}
 /*=============== BREAKPOINTS ===============*/
 /* For small devices */
 @media screen and (max-width: 340px){
