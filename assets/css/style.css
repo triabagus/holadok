@@ -15,26 +15,18 @@
     --shadow-section: 0px 15px 30px rgba(0, 0, 0, 0.1);
 
     /*========== Font and typography ==========*/
-    --title-font: 'Source Sans Pro', sans-serif;
-    --body-font: 'DM Sans', sans-serif;
+    --source-font: 'Source Sans Pro', sans-serif;
+    --dmsans-font: 'DM Sans', sans-serif;
     --h1-font-size: 3rem;
     --normal-font-size: 1.125rem;
     --small-font-size: 1rem;
     --smaller-font-size: 0.75rem;
 
     /*========== Font weight ==========*/
-    --font-medium: 500;
-    --font-bold: 700;
-
-    /*========== Margenes Bottom ==========*/
-    /* --mb-0-5: .5rem;
-    --mb-0-75: .75rem;
-    --mb-1: 1rem;
-    --mb-1-5: 1.5rem;
-    --mb-2: 2rem;
-    --mb-2-5: 2.5rem;
-    --mb-3: 3rem; */
-
+    --font-500: 500;
+    --font-600: 600;
+    --font-700: 700;
+    
     /*========== z index ==========*/
     --z-tooltip: 10;
     --z-fixed: 100;
@@ -63,7 +55,7 @@ html {
 body,
 button,
 input {
-  font-family: var(--title-font);
+  font-family: var(--source-font);
   font-size: var(--normal-font-size);
 }
 
@@ -77,7 +69,7 @@ body {
 
 h1, h2, h3, h4 {
   color: var(--title-color);
-  font-weight: var(--font-medium);
+  font-weight: var(--font-500);
 }
 
 ul {
@@ -147,8 +139,8 @@ button {
 .nav__logo{
   align-items: center;
   column-gap: .5rem;
-  font-weight: var(--font-bold);
-  font-family: var(--body-font);
+  font-weight: var(--font-700);
+  font-family: var(--dmsans-font);
   transition: color .3s;
 }
 
@@ -189,8 +181,8 @@ button {
   margin-top: 5rem;
 }
 .nav__list.right__menu .nav__link{
-  font-family: var(--body-font);
-  font-weight: 600;
+  font-family: var(--dmsans-font);
+  font-weight: var(--font-600);
   color: var(--first-color);
 }
 
@@ -201,7 +193,7 @@ button {
 
 .nav__link{
   color: rgba(0, 0, 0, 0.8);
-  font-weight: var(--font-medium);
+  font-weight: var(--font-500);
   transition: .4s;
 }
 
@@ -224,13 +216,14 @@ button {
 
 /* Change background header */
 .bg-header{
+  background: #fff;
   box-shadow: 0 2px 8px hsla(19, 64%, 24%, .1);
 }
 
 /* Active link */
 .active-link{
   color: var(--first-color);
-  font-weight: 600;
+  font-weight: var(--font-600);
 }
 
 /*=============== HOME ===============*/
@@ -240,14 +233,14 @@ button {
 
 .home__title{
   color: #101C45;
-  font-family: var(--body-font);
-  font-weight: 500;
+  font-family: var(--dmsans-font);
+  font-weight: var(--font-500);
   font-size: 48px;
   margin-bottom: 15px;
 }
 
 .home__description{
-  font-family: var(--body-font);
+  font-family: var(--dmsans-font);
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
@@ -287,15 +280,15 @@ button {
   margin-right: 10px;
 }
 .home__box-user{
-  font-family: 'Source Sans Pro';
+  font-family: var(--source-font);
   font-style: normal;
-  font-weight: 600;
+  font-weight: var(--font-600);
   font-size: 12px;
   line-height: 20px;
   color: #000000;
 }
 .home__box-testimonial{
-  font-family: 'Source Sans Pro';
+  font-family: var(--source-font);
   font-style: normal;
   font-weight: 400;
   font-size: 12px;
@@ -327,7 +320,7 @@ button {
   height: 60px;
   background: #203271;
   color: #fff;
-  font-family: var(--title-font);
+  font-family: var(--source-font);
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
@@ -361,12 +354,12 @@ button {
 
 .info__title,
 .info__description{
-  font-family: 'DM Sans';
+  font-family: var(--dmsans-font);
   font-style: normal;
 }
 
 .info__title{
-  font-weight: 700;
+  font-weight: var(--font-700);
   font-size: 16px;
   line-height: 23px;
   margin-bottom: 0.3rem;
@@ -429,6 +422,15 @@ button {
   .home__container{
     grid-template-columns: 480px 450px;
     padding-block: 7rem 3rem;
+  }
+
+  .container{
+    margin-inline: 3rem;
+    max-width: 930px;
+  }
+
+  .home__box-testimonial{
+    left: -1rem;
   }
 }
 
