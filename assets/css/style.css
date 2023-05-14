@@ -17,8 +17,8 @@
     /*========== Font and typography ==========*/
     --source-font: 'Source Sans Pro', sans-serif;
     --dmsans-font: 'DM Sans', sans-serif;
-    --h1-font-size: 3rem;
-    --normal-font-size: 1.125rem;
+    --h1-font-size: 1.7rem;
+    --normal-font-size: 0.875rem;
     --small-font-size: 1rem;
     --smaller-font-size: 0.75rem;
 
@@ -34,9 +34,9 @@
 
 @media screen and (min-width: 968px) {
   :root {
-    /* --h1-font-size: 3rem;
+    --h1-font-size: 3rem;
     --normal-font-size: 1.125rem;
-    --small-font-size: 1rem;
+    /*--small-font-size: 1rem;
     --smaller-font-size: 0.75rem; */
   }
 }
@@ -235,7 +235,7 @@ button {
   color: #101C45;
   font-family: var(--dmsans-font);
   font-weight: var(--font-500);
-  font-size: 48px;
+  font-size: var(--h1-font-size);
   margin-bottom: 15px;
 }
 
@@ -243,13 +243,14 @@ button {
   font-family: var(--dmsans-font);
   font-style: normal;
   font-weight: 400;
-  font-size: 18px;
+  font-size: var(--normal-font-size);
   line-height: 30px;
   color: #101C45;
   margin-bottom: 40px;
 }
 
 .home__container{
+  grid-template-columns: 255px 392px;
   justify-content: space-between;
 }
 
@@ -258,6 +259,7 @@ button {
 }
 
 .home__box-testimonial{
+  display: none;
   position: absolute;
   background: #fff;
   width: 292px;
@@ -298,8 +300,7 @@ button {
 
 .home__img{
   width: 400px;
-  position: absolute;
-  left: 5rem;
+  position: relative;
 }
 
 .home__parallelogram{
@@ -308,8 +309,7 @@ button {
   width: 510px;
   clip-path: polygon(20% 0%, 100% 0%, 80% 100%, 0% 100%);
   position: absolute;
-  top: -13rem;
-  left: 0rem;
+  display: none;
   z-index: -1;
 }
 
@@ -406,6 +406,21 @@ button {
     display: flex;
     justify-content: space-between;
     width: 100%;
+  }
+
+  .home__box-testimonial{
+    display: block;
+  }
+
+  .home__img{
+    position: absolute;
+    left: 5rem;
+  }
+
+  .home__parallelogram{
+    display: block;
+    top: -13rem;
+    left: 0rem;
   }
 }
 
