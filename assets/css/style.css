@@ -252,6 +252,7 @@ button {
 .home__container{
   grid-template-columns: 255px 392px;
   justify-content: space-between;
+  align-items: center;
 }
 
 .home__images{
@@ -330,12 +331,12 @@ button {
 
 /* Info */
 .info__container{
-  grid: 100px / auto auto auto;
+  grid: 130px / auto auto auto;
   grid-gap: 29px;
   background: #203271;
   position: relative;
   padding: 30px;
-  margin-top: 9rem;
+  margin-top: -1rem;
 }
 
 .info__child{
@@ -382,6 +383,19 @@ button {
   }
 }
 
+
+@media screen and (max-width: 500px){
+  .home__container,
+  .info__container{
+    display: flex;
+    flex-direction: column; 
+  }
+
+  .home__data{
+    text-align: center;
+  }
+}
+
 /* For medium devices */
 @media screen and (min-width: 769px){
   .nav__logo{
@@ -422,6 +436,11 @@ button {
     top: -13rem;
     left: 0rem;
   }
+
+  .info__container{
+    grid: 100px / auto auto auto;
+    margin-top: 9rem;
+  }
 }
 
 /* For large devices */
@@ -437,6 +456,7 @@ button {
   .home__container{
     grid-template-columns: 480px 450px;
     padding-block: 7rem 3rem;
+    align-items: inherit;
   }
 
   .container{
