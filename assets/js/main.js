@@ -26,3 +26,16 @@ const scrollHeader = () => {
                     : header.classList.remove('bg-header')
 }
 window.addEventListener('scroll', scrollHeader)
+
+/*=============== SCROLL REVEAL ANIMATION ===============*/
+const sr = ScrollReveal({
+    origin: 'top',
+    distance: '60px',
+    duration: 2500,
+    delay: 400,
+    // reset: true, // Animation repeat
+})
+
+sr.reveal(".home__img");
+sr.reveal(".home__data, .info__container", { origin: "bottom" });
+sr.reveal(".home__box-testimonial", { delay: 800 });
