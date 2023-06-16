@@ -13,8 +13,8 @@ It is a key part of the website's overall aesthetic and user experience, and can
 - Smooth scrolling in each section.
 - Compatible with all mobile devices and with a beautiful and pleasant user interface.
 
-DIFFICULTY
-Easy
+<b>DIFFICULTY</b>
+`Easy`
 
 Reference Design
 [Code Design - Challenge Holadok](https://codedesign.dev/challenge/holadok)
